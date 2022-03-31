@@ -11,6 +11,6 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('My first script in Pycharm')
+    print_hi('My second script in Pycharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
