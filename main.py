@@ -1,16 +1,12 @@
-# This is a sample Python script.
+import requests
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+resp = requests.get('https://reqres.in/api/users?page/2')
 
+code = resp.status_code
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+assert code == 201, "Code doesn't match"
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('My fourth script in Pycharm!')
+#print(resp.cookies)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+#print(resp.url)
